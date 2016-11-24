@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: excarservice
+  host: excarservice
+  disk_quota: 1024M
+  services:
+  - ClearDB MySQL Database-au
+  - excarservice-AdvancedMobileAccess
+  - excarservice-imfpush
+  - excarservice-cloudantNoSQLDB
